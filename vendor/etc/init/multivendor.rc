@@ -1,0 +1,40 @@
+#
+# Copyright (C) 2026 MatteoMeo
+#
+# This program is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
+#
+# This program is distributed in the hope that it will be useful,
+# but WITHOUT ANY WARRANTY; without even the implied warranty of
+# MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+# GNU General Public License for more details.
+#
+# You should have received a copy of the GNU General Public License
+# along with this program.  If not, see <http://www.gnu.org/licenses/>.
+#
+
+# MultiVendor init.rc script
+# Support multiple firmware versions, mainly used to add support for all variants
+# while running latest available firmware
+# Credits to @salvogiangri for the initial version of this script
+# credits to Fede2782
+
+# SM-G998B (Europe)
+on early-fs && property:ro.boot.em.model=SM-G998B && property:ro.boot.bootloader=G998BXXSJHZC2
+    # TEE
+    mount none /vendor/tee_998b /vendor/tee bind
+	# FW
+    mount none /vendor/firmware_998b /vendor/firmware bind
+    # OVERLAY
+    mount none /vendor/overlay_998b /vendor/overlay bind
+	
+# SM-G998N (Korean)
+on early-fs && property:ro.boot.em.model=SM-G998N && property:ro.boot.bootloader=G998NKSSCHZA9
+    # TEE
+    mount none /vendor/tee_998n /vendor/tee bind
+	# FW
+    mount none /vendor/firmware_998n /vendor/firmware bind
+    # OVERLAY
+    mount none /vendor/overlay_998n /vendor/overlay bind
