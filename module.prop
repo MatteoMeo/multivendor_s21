@@ -1,5 +1,5 @@
-id=tee
+id=multivendor
 name=Add support to other variants
-author=Fede2782, SalvoGiangreco
-description=Add multiple TEE TA packages to support multiple bootloaders (and so variants)
-version=v1.2.1
+author=MatteoMeo, Fede2782, SalvoGiangreco
+description=Add multiple TEE TA packages. Firmware Packages and Other Packages needed to support multiple bootloaders (and so variants)
+version=v1
