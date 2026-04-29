@@ -1,4 +1,4 @@
-# Multi-TEE changelog
+# MultiVendor changelog
 
 # v1
 -SM-G998B G998BXXSJHZC2
