@@ -38,3 +38,12 @@ on early-fs && property:ro.boot.em.model=SM-G998N && property:ro.boot.bootloader
     mount none /vendor/firmware_998n /vendor/firmware bind
     # OVERLAY
     mount none /vendor/overlay_998n /vendor/overlay bind
+
+# SM-G998N (Korean)
+on early-fs && property:ro.boot.em.model=SM-G998N && property:ro.boot.bootloader=G998NKSSAHYH5
+    # TEE
+    mount none /vendor/tee_n_august /vendor/tee bind
+	# FW
+    mount none /vendor/firmware_n_august /vendor/firmware bind
+    # OVERLAY
+    mount none /vendor/overlay_998n /vendor/overlay bind

@@ -15,5 +15,5 @@ echo "(allow priv_app_30_0 vendor_firmware_file (dir (getattr)))" >> "/vendor/et
 echo "(allow init_30_0 vendor_overlay_file (dir (mounton)))" >> "/vendor/etc/selinux/vendor_sepolicy.cil"
 echo "(allow priv_app_30_0 vendor_overlay_file (dir (getattr)))" >> "/vendor/etc/selinux/vendor_sepolicy.cil"
 
-SET_PROP vendor/build.prop "ro.vendor.multivendor.supported_bootloaders" "G998BXXSJHZC2,G998NKSSCHZA9"
+SET_PROP vendor/build.prop "ro.vendor.multivendor.supported_bootloaders" "G998BXXSJHZC2,G998NKSSAHYH5,G998NKSSCHZA9"
 SET_PROP vendor/build.prop "ro.vendor.multivendor.version" "1"
